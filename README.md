@@ -2,7 +2,7 @@
 Unoficial open source SDK built for retreiving weather data from [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## Usage and docs
-Comming soon. Work is still in progress.
+Will be included soon. Work is still in progress.
 
 ```
                                  Apache License
