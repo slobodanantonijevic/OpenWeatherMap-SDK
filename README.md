@@ -1,8 +1,13 @@
 # OpenWeatherMap SDK for Android
 Unofficial open source SDK built for retrieving weather data from [OpenWeatherMap API](https://openweathermap.org/api)
+This SDK is not proffesionally related in any way to [OpenWeatherMap](https://openweathermap.org/), and represents only a contribution to OpenSource world. If you like this piece of work, please support it by sharing, using, forking, it is all free :)
+
+## Notable technologies used
+RxJava, Dagger 2, Retrofit 2
 
 ## Usage and docs
 The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days or so.
+
 ### Adding to project
 #### Gradle: ####
 Step 1. Add it in your root build.gradle:
