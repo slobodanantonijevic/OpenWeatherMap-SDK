@@ -1,5 +1,5 @@
 # OpenWeatherMap SDK for Android
-Unoficial open source SDK built for retreiving weather data from [OpenWeatherMap API](https://openweathermap.org/api)
+Unofficial open source SDK built for retrieving weather data from [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## Usage and docs
 The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days.
