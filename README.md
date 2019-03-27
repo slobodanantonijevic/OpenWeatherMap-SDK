@@ -66,6 +66,44 @@ The usage is rather literal and quite simple
                     }
                 });
 ```
+#### Daily Forecast
+```groovy
+        OpenWeatherMap.request() // init the request
+                .appId(YOUR_OPENWEATHERMAP_APP_ID)
+                .lang("de") 
+                .getDailyForecastById(2643743) // for all possible methods see the wiki docs
+                .onResponse(new Result<DailyForecast>() {
+
+                    @Override
+                    public void onResponse(DailyForecast forecast) {
+                        // Yeey, success code here
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+                        // Boo, failure code here
+                    }
+                });
+```
+#### 5 days/3 hour forecast API
+```groovy
+        OpenWeatherMap.request() // init the request
+                .appId(YOUR_OPENWEATHERMAP_APP_ID)
+                .units(RequestParameters.UNITS_IMPERIAL)
+                .getFiveDaysThreeHourForecastByGeo(51.51, -0.13) // for all possible methods see the wiki docs
+                .onResponse(new Result<FiveDaysThreeHourForecast>() {
+
+                    @Override
+                    public void onResponse(FiveDaysThreeHourForecast forecast) {
+                        // Yeey, success code here
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+                        // Boo, failure code here
+                    }
+                });
+```
 ```
                                  Apache License
                            Version 2.0, January 2004
