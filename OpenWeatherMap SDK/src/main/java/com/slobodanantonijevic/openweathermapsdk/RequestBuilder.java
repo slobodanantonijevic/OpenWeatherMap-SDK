@@ -27,7 +27,6 @@ import java.util.Map;
 public class RequestBuilder {
 
     private OpenWeatherMap owm;
-
     private RequestParameters rqParams = new RequestParameters();
 
     RequestBuilder(OpenWeatherMap owm) {

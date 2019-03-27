@@ -28,63 +28,51 @@ public class RequestParameters {
     private Integer end;
     private Integer count;
 
-    public String getAppId() {
-
+    String getAppId() {
         return appId;
     }
 
-    public void setAppId(String appId) {
-
+    void setAppId(String appId) {
         this.appId = appId;
     }
 
-    public String getLang() {
-
+    String getLang() {
         return lang;
     }
 
-    public void setLang(String lang) {
-
+    void setLang(String lang) {
         this.lang = lang;
     }
 
-    public String getUnits() {
-
+    String getUnits() {
         return units;
     }
 
-    public void setUnits(String units) {
-
+    void setUnits(String units) {
         this.units = units;
     }
 
-    public Integer getStart() {
-
+    Integer getStart() {
         return start;
     }
 
-    public void setStart(Integer start) {
-
+    void setStart(Integer start) {
         this.start = start;
     }
 
-    public Integer getEnd() {
-
+    Integer getEnd() {
         return end;
     }
 
-    public void setEnd(Integer end) {
-
+    void setEnd(Integer end) {
         this.end = end;
     }
 
-    public Integer getCount() {
-
+    Integer getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
-
+    void setCount(Integer count) {
         this.count = count;
     }
 }

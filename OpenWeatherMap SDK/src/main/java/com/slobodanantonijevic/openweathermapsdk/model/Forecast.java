@@ -80,142 +80,113 @@ public class Forecast {
     private Rain rain3h;
 
     public int getDt() {
-
         return dt;
     }
 
     public void setDt(int dt) {
-
         this.dt = dt;
     }
 
     public Temp getTemp() {
-
         return temp;
     }
 
     public void setTemp(Temp temp) {
-
         this.temp = temp;
     }
 
     public double getPressure() {
-
         return pressure;
     }
 
     public void setPressure(double pressure) {
-
         this.pressure = pressure;
     }
 
     public int getHumidity() {
-
         return humidity;
     }
 
     public void setHumidity(int humidity) {
-
         this.humidity = humidity;
     }
 
-    public java.util.List<Weather> getWeather() {
-
+    public List<Weather> getWeather() {
         return weather;
     }
 
     public void setWeather(java.util.List<Weather> weather) {
-
         this.weather = weather;
     }
 
     public double getSpeed() {
-
         return speed;
     }
 
     public void setSpeed(double speed) {
-
         this.speed = speed;
     }
 
     public int getDeg() {
-
         return deg;
     }
 
     public void setDeg(int deg) {
-
         this.deg = deg;
     }
 
     public int getClouds() {
-
         return clouds;
     }
 
     public void setClouds(int clouds) {
-
         this.clouds = clouds;
     }
 
     public double getRain() {
-
         if (rain3h != null) {
-
             return rain3h.get3h();
         }
-
         return rain;
     }
 
     public void setRain(Rain rain3h) {
-
         this.rain3h = rain3h;
     }
 
     public void setRain(double rain) {
-
         this.rain = rain;
     }
 
     public Wind getWind() {
-
         return wind;
     }
 
     public void setWind(Wind wind) {
-
         this.wind = wind;
     }
 
     public Sys getSys() {
-
         return sys;
     }
 
     public void setSys(Sys sys) {
-
         this.sys = sys;
     }
 
     public String getDtTxt() {
-
         return dtTxt;
     }
 
     public void setDtTxt(String dtTxt) {
-
         this.dtTxt = dtTxt;
     }
 
     public Main getMain() {
-
         return main;
     }
 
     public void setMain(Main main) {
-
         this.main = main;
     }
 
@@ -226,12 +197,10 @@ public class Forecast {
         private double _3h;
 
         public double get3h() {
-
             return _3h;
         }
 
         public void set3h(double _3h) {
-
             this._3h = _3h;
         }
     }
@@ -263,62 +232,50 @@ public class Forecast {
         private double morn;
 
         public double getDay() {
-
             return day;
         }
 
         public void setDay(double day) {
-
             this.day = day;
         }
 
         public double getMin() {
-
             return min;
         }
 
         public void setMin(double min) {
-
             this.min = min;
         }
 
         public double getMax() {
-
             return max;
         }
 
         public void setMax(double max) {
-
             this.max = max;
         }
 
         public double getNight() {
-
             return night;
         }
 
         public void setNight(double night) {
-
             this.night = night;
         }
 
         public double getEve() {
-
             return eve;
         }
 
         public void setEve(double eve) {
-
             this.eve = eve;
         }
 
         public double getMorn() {
-
             return morn;
         }
 
         public void setMorn(double morn) {
-
             this.morn = morn;
         }
     }

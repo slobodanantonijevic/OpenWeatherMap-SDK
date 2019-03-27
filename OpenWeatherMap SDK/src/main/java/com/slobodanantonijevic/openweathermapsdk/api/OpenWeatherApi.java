@@ -31,7 +31,6 @@ import retrofit2.http.Query;
 public interface OpenWeatherApi {
 
     String BASE_URL = "https://api.openweathermap.org/";
-
     String APP_ID = "appid";
     String UNITS = "units"; // null = Kelvin, metric = Celsius, imperial = Fahrenheit
     String CITY_ID = "id";
@@ -68,7 +67,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "weather?")
     Observable<CurrentWeather> getCurrentWeather (
-
             @Query(CITY_ID) Integer id,
             @Query(QUERY) String query,
             @Query(LAT) Double lat,
@@ -102,7 +100,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "forecast/daily?")
     Observable<DailyForecast> getDailyForecast (
-
             @Query(CITY_ID) Integer id,
             @Query(QUERY) String query,
             @Query(LAT) Double lat,
@@ -136,7 +133,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "forecast?")
     Observable<FiveDaysThreeHourForecast> getFiveDaysThreeHourForecast (
-
             @Query(CITY_ID) Integer id,
             @Query(QUERY) String query,
             @Query(LAT) Double lat,
@@ -157,7 +153,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "uvi?")
     Observable<UvIndex> getUvIndex (
-
             @Query(LAT) Double lat,
             @Query(LON) Double lon,
             @Query(APP_ID) String appId
@@ -175,7 +170,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "uvi/forecast?")
     Observable<List<UvIndex>> getForecastUvIndex (
-
             @Query(LAT) Double lat,
             @Query(LON) Double lon,
             @Query(COUNT) Integer count,
@@ -193,7 +187,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "uvi/history?")
     Observable<List<UvIndex>> getHistoricalUvIndex (
-
             @Query(LAT) Double lat,
             @Query(LON) Double lon,
             @Query(COUNT) Integer count,
@@ -224,7 +217,6 @@ public interface OpenWeatherApi {
      */
     @GET(PATH + "history/city?type=hour")
     Observable<HistoricalData> getHistoricalData (
-
             @Query(CITY_ID) Integer id,
             @Query(QUERY) String query,
             @Query(LAT) Double lat,

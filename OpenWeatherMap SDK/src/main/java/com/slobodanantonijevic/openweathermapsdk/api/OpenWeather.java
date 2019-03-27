@@ -44,9 +44,7 @@ public class OpenWeather {
      * @return OpenWeatherMap API instance, either existing or creates new
      */
     public static OpenWeatherApi getOwmRetrofitInstance() {
-
         OpenWeatherApi instance = owmRetrofit;
-
         if (instance == null) { // Lazy initialization
             synchronized (dummy) { // Synchronization
                 instance = owmRetrofit;
@@ -64,7 +62,6 @@ public class OpenWeather {
                 }
             }
         }
-
         return instance;
     }
 }

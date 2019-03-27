@@ -48,62 +48,50 @@ public class HistoricalData {
     private List<WeatherData> weatherData = null;
 
     public String getMessage() {
-
         return message;
     }
 
     public void setMessage(String message) {
-
         this.message = message;
     }
 
     public String getCod() {
-
         return cod;
     }
 
     public void setCod(String cod) {
-
         this.cod = cod;
     }
 
     public int getCityId() {
-
         return cityId;
     }
 
     public void setCityId(int cityId) {
-
         this.cityId = cityId;
     }
 
     public double getCalctime() {
-
         return calctime;
     }
 
     public void setCalctime(double calctime) {
-
         this.calctime = calctime;
     }
 
     public int getCnt() {
-
         return cnt;
     }
 
     public void setCnt(int cnt) {
-
         this.cnt = cnt;
     }
 
     public List<WeatherData> getWeatherData() {
-
         return weatherData;
     }
 
     public void setWeatherData(List<WeatherData> weatherData) {
-
         this.weatherData = weatherData;
     }
 }

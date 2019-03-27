@@ -44,52 +44,42 @@ public class WeatherData {
     private int dt;
 
     public Main getMain() {
-
         return main;
     }
 
     public void setMain(Main main) {
-
         this.main = main;
     }
 
     public Wind getWind() {
-
         return wind;
     }
 
     public void setWind(Wind wind) {
-
         this.wind = wind;
     }
 
     public Clouds getClouds() {
-
         return clouds;
     }
 
     public void setClouds(Clouds clouds) {
-
         this.clouds = clouds;
     }
 
     public List<Weather> getWeather() {
-
         return weather;
     }
 
     public void setWeather(List<Weather> weather) {
-
         this.weather = weather;
     }
 
     public int getDt() {
-
         return dt;
     }
 
     public void setDt(int dt) {
-
         this.dt = dt;
     }
 
@@ -100,12 +90,10 @@ public class WeatherData {
         private int all;
 
         public int getAll() {
-
             return all;
         }
 
         public void setAll(int all) {
-
             this.all = all;
         }
 
