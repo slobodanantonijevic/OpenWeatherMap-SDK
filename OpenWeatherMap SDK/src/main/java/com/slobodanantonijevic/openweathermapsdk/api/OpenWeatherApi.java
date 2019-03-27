@@ -18,8 +18,8 @@ public interface OpenWeatherApi {
     String QUERY = "q"; // cityName(,countryCode)
     String LAT = "lat";
     String LON = "lon";
-    String ZIP_CODE = "zip";
-    String LANG = "lang";
+    String ZIP_CODE = "zip"; // zipCode(,countryCode)
+    String LANG = "lang"; //
     String PATH = "/data/2.5/";
 
     @GET(PATH + "weather?")
@@ -60,4 +60,6 @@ public interface OpenWeatherApi {
             @Query(UNITS) String units,
             @Query(APP_ID) String appId
     );
+
+    
 }

@@ -15,9 +15,6 @@ public class RequestBuilder {
     private OpenWeatherMap owm;
 
     Map<String, String> rqParams = new HashMap<>();
-    private String appId;
-    private String lang;
-    private String units;
 
     RequestBuilder(OpenWeatherMap owm) {
         this.owm = owm;

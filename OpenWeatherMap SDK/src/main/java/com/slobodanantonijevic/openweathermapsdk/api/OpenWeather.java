@@ -1,7 +1,5 @@
 package com.slobodanantonijevic.openweathermapsdk.api;
 
-import android.util.Log;
-
 import javax.inject.Singleton;
 
 import io.reactivex.schedulers.Schedulers;
@@ -29,14 +27,9 @@ public class OpenWeather {
         OpenWeatherApi instance = owmRetrofit;
 
         if (instance == null) { // Lazy initialization
-
-            Log.w("RETROFIT", "IS NULL");
-
             synchronized (dummy) { // Synchronization
-                Log.w("RETROFIT", "SYNC");
                 instance = owmRetrofit;
                 if (instance == null) { // Extra safety
-                    Log.w("RETROFIT", "IS NULL AGAIN");
                     /*
                      * In order to use RetroFit with RxJava we need to add RxJava2CallAdapterFactory
                      * Also in order to make network calls asynchronous we need to create it with Schedulers.io()
