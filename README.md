@@ -21,7 +21,7 @@ Step 2. Add the dependency
 ```groovy
 dependencies {
       ...
-	    implementation 'com.github.slobodanantonijevic:OpenWeatherMap-SDK:Tag'
+	    implementation 'com.github.slobodanantonijevic:OpenWeatherMap-SDK:1.0.0'
       ...
 }
 ```
@@ -42,7 +42,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.slobodanantonijevic</groupId>
 	    <artifactId>OpenWeatherMap-SDK</artifactId>
-	    <version>Tag</version>
+	    <version>1.0.0</version>
 	</dependency>
 ```
 
