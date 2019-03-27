@@ -57,7 +57,7 @@ The usage is rather literal and quite simple
 
                     @Override
                     public void onResponse(CurrentWeather weather) {
-                        // Yeey, success your code here
+                        // Yeey, success code here
                     }
 
                     @Override
