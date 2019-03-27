@@ -4,9 +4,7 @@ Unoficial open source SDK built for retreiving weather data from [OpenWeatherMap
 ## Usage and docs
 The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days.
 ### Adding to project
-
 #### Gradle: ####
-
 Step 1. Add it in your root build.gradle:
 ```groovy
 allprojects {
@@ -26,7 +24,6 @@ dependencies {
 }
 ```
 #### Maven: ####
-
 Step 1. Add the JitPack repository to your build file:
 ```groovy
 <repositories>
