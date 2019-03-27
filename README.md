@@ -2,7 +2,7 @@
 Unofficial open source SDK built for retrieving weather data from [OpenWeatherMap API](https://openweathermap.org/api)
 
 ## Usage and docs
-The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days.
+The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days or so.
 ### Adding to project
 #### Gradle: ####
 Step 1. Add it in your root build.gradle:
