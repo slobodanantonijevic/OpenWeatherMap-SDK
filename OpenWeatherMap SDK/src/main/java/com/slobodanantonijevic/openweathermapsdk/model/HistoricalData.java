@@ -21,19 +21,23 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class DailyForecast {
+public class HistoricalData {
 
-    @SerializedName("city")
+    @SerializedName("message")
     @Expose
-    private City city;
+    private String message;
 
     @SerializedName("cod")
     @Expose
     private String cod;
 
-    @SerializedName("message")
+    @SerializedName("city_id")
     @Expose
-    private double message;
+    private int cityId;
+
+    @SerializedName("calctime")
+    @Expose
+    private double calctime;
 
     @SerializedName("cnt")
     @Expose
@@ -41,16 +45,16 @@ public class DailyForecast {
 
     @SerializedName("list")
     @Expose
-    private List<Forecast> list = null;
+    private List<WeatherData> weatherData = null;
 
-    public City getCity() {
+    public String getMessage() {
 
-        return city;
+        return message;
     }
 
-    public void setCity(City city) {
+    public void setMessage(String message) {
 
-        this.city = city;
+        this.message = message;
     }
 
     public String getCod() {
@@ -63,14 +67,24 @@ public class DailyForecast {
         this.cod = cod;
     }
 
-    public double getMessage() {
+    public int getCityId() {
 
-        return message;
+        return cityId;
     }
 
-    public void setMessage(double message) {
+    public void setCityId(int cityId) {
 
-        this.message = message;
+        this.cityId = cityId;
+    }
+
+    public double getCalctime() {
+
+        return calctime;
+    }
+
+    public void setCalctime(double calctime) {
+
+        this.calctime = calctime;
     }
 
     public int getCnt() {
@@ -83,13 +97,13 @@ public class DailyForecast {
         this.cnt = cnt;
     }
 
-    public List<Forecast> getList() {
+    public List<WeatherData> getWeatherData() {
 
-        return list;
+        return weatherData;
     }
 
-    public void setList(List<Forecast> list) {
+    public void setWeatherData(List<WeatherData> weatherData) {
 
-        this.list = list;
+        this.weatherData = weatherData;
     }
 }

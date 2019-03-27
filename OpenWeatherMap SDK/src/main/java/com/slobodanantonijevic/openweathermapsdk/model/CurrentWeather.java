@@ -1,42 +1,37 @@
+/*
+ * Copyright (C) 2019 Slobodan Antonijević
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.slobodanantonijevic.openweathermapsdk.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class CurrentWeather {
+public class CurrentWeather extends WeatherData {
 
     @SerializedName("coord")
     @Expose
     private Coord coord;
 
-    @SerializedName("weather")
-    @Expose
-    private List<Weather> weather = null;
-
     @SerializedName("base")
     @Expose
     private String base;
 
-    @SerializedName("main")
-    @Expose
-    private Main main;
-
     @SerializedName("visibility")
     @Expose
     private int visibility;
-
-    @SerializedName("wind")
-    @Expose
-    private Wind wind;
-
-    @SerializedName("clouds")
-    @Expose
-    private Clouds clouds;
-
-    @SerializedName("dt")
-    @Expose
-    private int dt;
 
     @SerializedName("sys")
     @Expose
@@ -64,16 +59,6 @@ public class CurrentWeather {
         this.coord = coord;
     }
 
-    public List<Weather> getWeather() {
-
-        return weather;
-    }
-
-    public void setWeather(List<Weather> weather) {
-
-        this.weather = weather;
-    }
-
     public String getBase() {
 
         return base;
@@ -84,16 +69,6 @@ public class CurrentWeather {
         this.base = base;
     }
 
-    public Main getMain() {
-
-        return main;
-    }
-
-    public void setMain(Main main) {
-
-        this.main = main;
-    }
-
     public int getVisibility() {
 
         return visibility;
@@ -102,36 +77,6 @@ public class CurrentWeather {
     public void setVisibility(int visibility) {
 
         this.visibility = visibility;
-    }
-
-    public Wind getWind() {
-
-        return wind;
-    }
-
-    public void setWind(Wind wind) {
-
-        this.wind = wind;
-    }
-
-    public Clouds getClouds() {
-
-        return clouds;
-    }
-
-    public void setClouds(Clouds clouds) {
-
-        this.clouds = clouds;
-    }
-
-    public int getDt() {
-
-        return dt;
-    }
-
-    public void setDt(int dt) {
-
-        this.dt = dt;
     }
 
     public Sys getSys() {

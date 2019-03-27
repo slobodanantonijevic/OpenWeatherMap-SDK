@@ -1,3 +1,19 @@
+/*
+ * Copyright (C) 2019 Slobodan Antonijević
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.slobodanantonijevic.openweathermapsdk.model;
 
 import com.google.gson.annotations.Expose;
@@ -153,6 +169,11 @@ public class Forecast {
         return rain;
     }
 
+    public void setRain(Rain rain3h) {
+
+        this.rain3h = rain3h;
+    }
+
     public void setRain(double rain) {
 
         this.rain = rain;
@@ -188,16 +209,117 @@ public class Forecast {
         this.dtTxt = dtTxt;
     }
 
-    public void setRain(Rain rain3h) {
-
-        this.rain3h = rain3h;
-    }
-
     public Main getMain() {
+
         return main;
     }
 
     public void setMain(Main main) {
+
         this.main = main;
+    }
+
+    public class Rain {
+
+        @SerializedName("3h")
+        @Expose
+        private double _3h;
+
+        public double get3h() {
+
+            return _3h;
+        }
+
+        public void set3h(double _3h) {
+
+            this._3h = _3h;
+        }
+    }
+
+    public class Temp {
+
+        @SerializedName("day")
+        @Expose
+        private double day;
+
+        @SerializedName("min")
+        @Expose
+        private double min;
+
+        @SerializedName("max")
+        @Expose
+        private double max;
+
+        @SerializedName("night")
+        @Expose
+        private double night;
+
+        @SerializedName("eve")
+        @Expose
+        private double eve;
+
+        @SerializedName("morn")
+        @Expose
+        private double morn;
+
+        public double getDay() {
+
+            return day;
+        }
+
+        public void setDay(double day) {
+
+            this.day = day;
+        }
+
+        public double getMin() {
+
+            return min;
+        }
+
+        public void setMin(double min) {
+
+            this.min = min;
+        }
+
+        public double getMax() {
+
+            return max;
+        }
+
+        public void setMax(double max) {
+
+            this.max = max;
+        }
+
+        public double getNight() {
+
+            return night;
+        }
+
+        public void setNight(double night) {
+
+            this.night = night;
+        }
+
+        public double getEve() {
+
+            return eve;
+        }
+
+        public void setEve(double eve) {
+
+            this.eve = eve;
+        }
+
+        public double getMorn() {
+
+            return morn;
+        }
+
+        public void setMorn(double morn) {
+
+            this.morn = morn;
+        }
     }
 }
