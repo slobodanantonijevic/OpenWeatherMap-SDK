@@ -20,6 +20,7 @@ public class RequestParameters {
 
     public static final String UNITS_METRIC = "metric";
     public static final String UNITS_IMPERIAL = "imperial";
+    public static final String UNITS_DEFAULT = null;
 
     private String appId;
     private String lang;

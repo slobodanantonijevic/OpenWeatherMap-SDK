@@ -31,6 +31,14 @@ public class WeatherData {
     @Expose
     private Wind wind;
 
+    @SerializedName("rain")
+    @Expose
+    private Rain rain;
+
+    @SerializedName("snow")
+    @Expose
+    private Snow snow;
+
     @SerializedName("clouds")
     @Expose
     private Clouds clouds;
@@ -83,19 +91,19 @@ public class WeatherData {
         this.dt = dt;
     }
 
-    public class Clouds {
+    public Rain getRain() {
+        return rain;
+    }
 
-        @SerializedName("all")
-        @Expose
-        private int all;
+    public void setRain(Rain rain) {
+        this.rain = rain;
+    }
 
-        public int getAll() {
-            return all;
-        }
+    public Snow getSnow() {
+        return snow;
+    }
 
-        public void setAll(int all) {
-            this.all = all;
-        }
-
+    public void setSnow(Snow snow) {
+        this.snow = snow;
     }
 }

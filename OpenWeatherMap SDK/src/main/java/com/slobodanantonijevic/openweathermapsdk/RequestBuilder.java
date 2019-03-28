@@ -18,12 +18,6 @@ package com.slobodanantonijevic.openweathermapsdk;
 
 import android.location.Location;
 
-import com.slobodanantonijevic.openweathermapsdk.api.OpenWeather;
-import com.slobodanantonijevic.openweathermapsdk.api.OpenWeatherApi;
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class RequestBuilder {
 
     private OpenWeatherMap owm;

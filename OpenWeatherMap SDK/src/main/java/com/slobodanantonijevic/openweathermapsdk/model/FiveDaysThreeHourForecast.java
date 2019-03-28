@@ -37,7 +37,7 @@ public class FiveDaysThreeHourForecast {
 
     @SerializedName("list")
     @Expose
-    private List<Forecast> forecastList = null;
+    private List<Forecast3H> forecastList = null;
 
     @SerializedName("city")
     @Expose
@@ -67,11 +67,11 @@ public class FiveDaysThreeHourForecast {
         this.cnt = cnt;
     }
 
-    public List<Forecast> getForecastList() {
+    public List<Forecast3H> getForecastList() {
         return forecastList;
     }
 
-    public void setForecastList(List<Forecast> forecastList) {
+    public void setForecastList(List<Forecast3H> forecastList) {
         this.forecastList = forecastList;
     }
 
