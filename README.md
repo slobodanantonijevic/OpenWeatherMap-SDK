@@ -8,7 +8,8 @@ This SDK is not professionally related in any way to [OpenWeatherMap](https://op
 RxJava, Dagger 2, Retrofit 2
 
 ## Usage and docs
-The wiki and Javadoc are still a work in progress, and will be updated over the course of next few days or so.
+For detailed usage please refer to [Wiki guide](https://github.com/slobodanantonijevic/OpenWeatherMap-SDK/wiki)
+Javadoc is a work in progress.
 
 ### Adding to project
 #### Gradle: ####
