@@ -182,6 +182,9 @@ public interface OpenWeatherApi {
      *
      * @param lat Latitude
      * @param lon Longitude
+     * @param start Start date (unix time, UTC time zone)
+     * @param end End date (unix time, UTC time zone)
+     * @param count Number of returned days
      * @param appId App ID. Acquired upon registration on openwaethermap.org
      * @return List<(@link UvIndex)> object
      */
@@ -189,6 +192,8 @@ public interface OpenWeatherApi {
     Observable<List<UvIndex>> getHistoricalUvIndex (
             @Query(LAT) Double lat,
             @Query(LON) Double lon,
+            @Query(START) Integer start,
+            @Query(END) Integer end,
             @Query(COUNT) Integer count,
             @Query(APP_ID) String appId
     );
