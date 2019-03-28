@@ -15,7 +15,7 @@ Javadoc is a work in progress.
 ### Adding to project
 #### Gradle: ####
 Step 1. Add it in your root build.gradle:
-```groovy
+```
 allprojects {
 	repositories {
 		...
@@ -25,7 +25,7 @@ allprojects {
 ```
 
 Step 2. Add the dependency
-```groovy
+```
 dependencies {
       ...
       implementation 'com.github.slobodanantonijevic:OpenWeatherMap-SDK:1.0.0'
@@ -34,7 +34,7 @@ dependencies {
 ```
 #### Maven: ####
 Step 1. Add the JitPack repository to your build file:
-```groovy
+```
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -44,7 +44,7 @@ Step 1. Add the JitPack repository to your build file:
 ```
 
 Step 2. Add the dependency
-```groovy
+```
 <dependency>
     <groupId>com.github.slobodanantonijevic</groupId>
     <artifactId>OpenWeatherMap-SDK</artifactId>
