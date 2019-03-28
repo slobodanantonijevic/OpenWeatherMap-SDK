@@ -9,6 +9,7 @@ RxJava, Dagger 2, Retrofit 2
 
 ## Usage and docs
 For detailed usage please refer to [Wiki guide](https://github.com/slobodanantonijevic/OpenWeatherMap-SDK/wiki)
+
 Javadoc is a work in progress.
 
 ### Adding to project
