@@ -238,7 +238,8 @@ public class OpenWeatherMap {
      */
     void getHistoricalUvIndex(Double lat, Double lon, RequestParameters rqParams) {
         OpenWeather.getOwmRetrofitInstance()
-                .getHistoricalUvIndex(lat, lon, rqParams.getCount(), rqParams.getAppId())
+                .getHistoricalUvIndex(lat, lon, rqParams.getStart(), rqParams.getEnd(),
+                        rqParams.getCount(), rqParams.getAppId())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<List<UvIndex>>() {
