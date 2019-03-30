@@ -309,45 +309,45 @@ public class RequestBuilder {
         return getUvIndexHistorical(lat, lon);
     }
 
-    /**
-     *
-     * @param id
-     * @return
-     */
-    public OpenWeatherMap getHistoricalDataById(Integer id) {
-        owm.getHistoricalData(id, null, null, null, null, rqParams);
-        return owm;
-    }
-
-    /**
-     *
-     * @param name
-     * @return
-     */
-    public OpenWeatherMap getHistoricalDataByName(String name) {
-        owm.getHistoricalData(null, name, null, null, null, rqParams);
-        return owm;
-    }
-
-    /**
-     *
-     * @param lat
-     * @param lon
-     * @return
-     */
-    public OpenWeatherMap getHistoricalDataByGeo(Double lat, Double lon) {
-        owm.getHistoricalData(null, null, lat, lon, null, rqParams);
-        return owm;
-    }
-
-    /**
-     *
-     * @param location
-     * @return
-     */
-    public OpenWeatherMap getHistoricalDataByGeo(Location location) {
-        Double lat = location.getLatitude();
-        Double lon = location.getLongitude();
-        return getHistoricalDataByGeo(lat, lon);
-    }
+//    /**
+//     * // TODO: There's a problem that needs fixing first here, before it can be available
+//     * @param id
+//     * @return
+//     */
+//    public OpenWeatherMap getHistoricalDataById(Integer id) {
+//        owm.getHistoricalData(id, null, null, null, null, rqParams);
+//        return owm;
+//    }
+//
+//    /**
+//     *
+//     * @param name
+//     * @return
+//     */
+//    public OpenWeatherMap getHistoricalDataByName(String name) {
+//        owm.getHistoricalData(null, name, null, null, null, rqParams);
+//        return owm;
+//    }
+//
+//    /**
+//     *
+//     * @param lat
+//     * @param lon
+//     * @return
+//     */
+//    public OpenWeatherMap getHistoricalDataByGeo(Double lat, Double lon) {
+//        owm.getHistoricalData(null, null, lat, lon, null, rqParams);
+//        return owm;
+//    }
+//
+//    /**
+//     *
+//     * @param location
+//     * @return
+//     */
+//    public OpenWeatherMap getHistoricalDataByGeo(Location location) {
+//        Double lat = location.getLatitude();
+//        Double lon = location.getLongitude();
+//        return getHistoricalDataByGeo(lat, lon);
+//    }
 }
