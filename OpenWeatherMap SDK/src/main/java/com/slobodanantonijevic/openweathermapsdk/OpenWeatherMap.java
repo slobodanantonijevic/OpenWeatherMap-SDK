@@ -52,12 +52,9 @@ public class OpenWeatherMap {
     private static OpenWeatherMap instance() {
         OpenWeatherMap instance = activeInstance;
         if (instance == null) { // Lazy initialization
-            Log.w("OWM", "IS NULL");
             synchronized (dummy) { // Synchronization
-                Log.w("OWM", "SYNC");
                 instance = activeInstance;
                 if (instance == null) { // Extra safety
-                    Log.w("OWM", "IS NULL AGAIN");
                     activeInstance = instance = new OpenWeatherMap();
                 }
             }
